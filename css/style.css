@@ -7,7 +7,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 :root{
-    --main-color:#20798d;
+    --main-color:#1a905c;
     
 }
 h1,
@@ -164,12 +164,12 @@ a:focus {
     max-height: 40px;
 }
 
-.navbar .dropdown-menu {
+/* .navbar .dropdown-menu {
     margin-top: 0;
     border: 0;
     border-radius: 0;
     background: #f8f9fa;
-}
+} */
 
 @media (min-width: 992px) {
     .navbar {
@@ -238,6 +238,7 @@ a:focus {
     
     .navbar .dropdown-menu {
         box-shadow: none;
+        
     }
 }
 
@@ -950,86 +951,45 @@ a:focus {
 /********* Contact CSS *********/
 /*******************************/
 .contact {
-    position: relative;
+    background-image: url('../img/bg-contact.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    margin: 45px 0;
-    background: var(--main-color);
-}
+    height: 100%;
+    padding: 61px 0px;
 
-.contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
-    background-size: contain;
 }
-
-.contact .contact-form {
-    position: relative;
-    padding: 90px 0 90px 45px;
-    background: var(--main-color);
+.contact h2{
+    color: white;
+    text-align: center;
 }
-
-.contact .contact-form input {
-    color: #ffffff;
-    padding: 15px 0;
-    background: none;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(256, 256, 256, .5);
+.contact form{
+    background-color: white;
+    color: black;
+    margin: 37px 71px;
+    padding: 49px 50px;
 }
-
-.contact .contact-form textarea {
-    color: #ffffff;
-    height: 90px;
-    padding: 15px 0;
-    background: none;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(256, 256, 256, .5);
-}
-
-.contact .contact-form .form-control::placeholder {
-    color: #ffffff;
-    opacity: 1;
-}
-
-.contact .contact-form .form-control:-ms-input-placeholder,
-.contact .contact-form .form-control::-ms-input-placeholder {
-    color: #ffffff;
-}
-
-.contact .contact-form .btn {
-    margin-top: 35px;
-    color: var(--main-color);
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
-}
-
-.contact .contact-form .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
-}
-
-.contact .help-block ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    font-size: 14px;
-    font-style: italic;
-    color: #ffffff;
-}
-
-@media (max-width: 767.98px) {
-    .contact .container-fluid {
-        background: none;
-    }
+form label{
     
-    .contact .contact-form {
-        padding: 90px 0;
-    }
 }
-
-
+form input{
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+    outline: none;
+    width: 98%;
+}
+form textarea{
+    border: 1px solid var(--main-color);
+}
+form button{
+    align-items: center;
+    background-color: var(--main-color);
+    color: white;
+    padding: 6px 16px;
+    width: 100%;
+    border: none;
+    border-radius: 0px 20px;
+}
 
 /*******************************/
 /********* Footer CSS **********/
