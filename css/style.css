@@ -62,7 +62,17 @@ a:focus {
     box-shadow: inset 0 0 0 0 var(--main-color);
     border-color: var(--main-color);
 }
-
+div div button{
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 20px 0px 20px 0px;
+}
+div div button i{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 2rem;
+}
 #loader {
     position: fixed;
     top: 0;
