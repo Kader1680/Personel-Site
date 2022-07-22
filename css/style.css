@@ -980,6 +980,7 @@ form input{
 }
 form textarea{
     border: 1px solid var(--main-color);
+    width: 100%;
 }
 form button{
     align-items: center;
